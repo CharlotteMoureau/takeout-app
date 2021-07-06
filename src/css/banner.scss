@@ -1,0 +1,166 @@
+.banner-top {
+    font-family: 'Montserrat', sans-serif;
+    width: 100vw;
+    margin-bottom: 5vh;
+
+    .shopping-cart {
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        background-color: #fc9a96;
+        color: white;
+        padding-top: 3vh;
+        padding-bottom: 3vh;
+
+        p {
+            grid-area: 1 / 3 / 2 / 7;
+            font-weight: 600;
+            text-overflow: ellipsis;
+            overflow: hidden;
+            white-space: nowrap;
+            padding-bottom: 1vh;
+            border-bottom: 2px solid white;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
+        .cart-amount {
+            background-color: #ec4464;
+            border-radius: 50%;
+            width: 20px;
+            height: 20px;
+            padding: 2px;
+            position: absolute;
+            top: 1.5vh;
+            left: 91vw;
+            text-align: center;
+
+            span {
+                font-size: .8rem;
+                font-weight: 600;
+            }
+        }
+
+        a {
+            grid-area: 1 / 8 / 2 / 9;
+            color: white;
+
+            i {
+                font-size: 1.5rem;
+            }
+        }
+
+    }
+
+    .fruits-banner {
+        position: relative;
+        height: 20vh;
+        width: 100vw;
+        background-image: url("../static/img/fruits.jpg");
+        background-size: cover;
+    }
+
+    .logo {
+        position: absolute;
+        top: 22vh;
+        left: 36vw;
+        background-color: white;
+        border-radius: 50%;
+        border: 1px solid grey;
+        width: 100px;
+        height: 100px;
+        margin-bottom: 5vh;
+        text-align: center;
+
+        img {
+            width: 65px;
+            padding-top: 12.5px;
+        }
+    }
+
+    .banner-bottom {
+        display: flex;
+        justify-content: space-between;
+        width: 90%;
+        margin: auto;
+        margin-top: 7vh;
+
+        img {
+            width: 150px;
+            margin-bottom: 1vh;
+        }
+
+        .stars {
+            i {
+                padding-left: 3px;
+                color: #e94263;
+            }
+
+            button {
+                border: none;
+                background: none;
+                padding-left: 5vw;
+                color: #e94263;
+                text-decoration: underline;
+                    
+                    &:hover {
+                        cursor: pointer;
+                    }
+            }
+        }
+
+        .heart {
+            background: none;
+            border: 1px solid lightgray;
+            transition : all 200ms ease-out;
+            margin-top: 2vh;
+            margin-bottom: 2vh;
+
+            &:hover {
+                border: 1px solid #e94263;
+                cursor: pointer;
+            }
+
+            i {
+                padding-left: 2vw;
+                padding-right: 2vw;
+                color: #e94263;
+                font-size: 1.3rem;
+            }
+        }
+    }
+}
+
+.modal {
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translate(-50%, 0);
+
+    button {
+        position: absolute;
+        z-index: 1;
+        left: 90%;
+        background: none;
+        border: none;
+
+        i {
+            color: white;
+        }
+    }
+
+    img {
+        position: relative;
+        height: 50vh;
+    }
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7); 
+}

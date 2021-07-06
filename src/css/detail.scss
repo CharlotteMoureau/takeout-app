@@ -1,0 +1,217 @@
+.top-detail {
+    text-align: center;
+    font-family: 'Merriweather', serif;
+    margin-bottom: 4vh;
+    overflow: hidden;
+
+    .top-icon {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3vh;
+        margin-bottom: 5vh;
+
+        .back-detail {
+            margin-left: 5vw;
+            
+            i {
+                color: white;
+            }
+        }
+
+        .cart-detail {
+            margin-right: 5vw;
+
+            .cart-amount {
+                background-color: #ec4464;
+                border-radius: 50%;
+                width: 20px;
+                height: 20px;
+                padding: 1px;
+                position: absolute;
+                top: 1.5vh;
+                left: 92vw;
+                text-align: center;
+    
+                span {
+                    font-family: 'Montserrat', sans-serif;
+                    color: white;
+                    font-size: .7rem;
+                    font-weight: 600;
+                }
+            }
+    
+            i {
+                color: white;
+                font-size: 1.2rem;
+                    
+                &:hover {
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+    
+
+    .circle {
+        position: fixed;
+        top: -66vh;
+        left: -40vw;
+        background-color: #fc9a96;
+        border-radius: 50%;
+        height: 100vh;
+        width: 180vw;
+        z-index: -1;
+    }
+
+    h1 {
+        margin-bottom: 2vh;
+        font-size: 1.5rem;
+    }
+
+    .kcal {
+        margin-bottom: 2vh;
+        color: #ec4464;
+    }
+
+    img {
+        width: 45vw;
+        margin-bottom: 3vh;
+    }
+
+    .purchase {
+        display: flex;
+        width: 60vw;
+        margin: auto;
+        font-size: 1.2rem;
+
+        .price {
+            background-color: rgb(230, 228, 228);
+            height: 5vh;
+            width: 30vw;
+            border-radius: 16px;
+            padding-right: 8vw;
+
+            &:before {
+                content: "";
+                position: absolute;
+                z-index: 1;
+                display: inline-block;
+                border-top-left-radius: 16px;
+                border-bottom-left-radius: 16px;
+                height: 5vh;
+                width: 12vw;
+                left: 46vw;
+                background-color: white;
+            }
+
+            p {
+                padding-top: 1.4vh;
+            }
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-evenly;
+            position: absolute;
+            left: 48vw;
+            background-color: rgb(230, 228, 228);
+            height: 5vh;
+            width: 25vw;
+            border-radius: 16px;
+            z-index: 2;
+
+            button {
+                border: none;
+                background: none;
+
+                &:hover {
+                    cursor: pointer;
+                }
+
+                i {
+                    color: black;
+                    font-size: .7rem;
+                }
+            }
+
+            span {
+                margin: 1.4vh 0 1vh;
+                padding: 0 2vw 0 2vw;
+                border-left: 2px solid rgba(134,142,167, 0.6);
+                border-right: 2px solid rgba(134,142,167, 0.6);
+            }
+        }
+
+        .order {
+            position: absolute;
+            left: 75vw;
+            padding-top: 1.5vh;
+            border: none;
+            background: none;
+
+            &:hover {
+                cursor: pointer;
+            }
+
+            .fa-cart-arrow-down {
+                color: #fc9a96;
+    
+            }
+
+        }
+
+    }
+}
+
+.ingredients {
+    font-family: 'Merriweather', serif;
+    width: 90vw;
+    margin: auto;
+
+    h3 {
+        font-size: 1.3rem;
+    }
+
+    em {
+        font-size: .5rem;
+        font-style: italic;
+    }
+
+    ul {
+        display: flex;
+        overflow-x: auto;
+        margin-top: 3vh;
+        margin-bottom: 4vh;
+
+        li {
+            background-color: rgba(230, 228, 228, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 16px;
+            margin-right: 4vw;
+            padding: 10px 10px 10px 10px;
+
+            img {
+                height: 45px;
+            }
+        }
+    }
+}
+
+.description {
+    font-family: 'Merriweather', serif;
+    width: 90vw;
+    margin: auto;
+
+    h3 {
+        font-size: 1.3rem;
+        margin-bottom: 2vh;
+    }
+
+    p {
+        font-family: 'Montserrat', sans-serif; 
+        text-align: justify;
+        line-height: 150%;
+    }
+}

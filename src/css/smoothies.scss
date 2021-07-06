@@ -1,0 +1,54 @@
+.smoothies-list {
+    font-family: 'Montserrat', sans-serif;    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 5vw;
+    margin: 0 5vw 0;
+    text-align: center;
+
+    .smoothie-product {
+        background-color: rgba(134,142,167, 0.1);
+        border-radius: 15%;
+        margin-bottom: 4vh;
+
+        .smoothie-home {
+            margin-bottom: 1vh;
+
+            .smoothie-img-home {
+                height: 130px;
+                padding-top: 2vh;
+                margin-bottom: 2vh;
+            }
+    
+            .smoothie-name-home {
+                font-weight: 500;
+                margin-bottom: 1vh;
+                padding: 0 1vw;
+            }
+    
+            .smoothie-price-home{
+                color: #e94263;
+                font-weight: 700;
+                font-size: 1.2rem;
+            }
+        }
+
+        .link {
+            background-color: #992868;
+            border-radius: 50%;
+            width: 30px;
+            height: 30px;
+            margin: auto;
+            margin-bottom: -2vh;
+
+            a {
+                color: white;
+
+                i {
+                    font-size: 1.2rem;
+                    padding-top: 5px;
+                }
+            }
+        }
+    }
+}
