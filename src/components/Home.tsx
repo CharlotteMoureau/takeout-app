@@ -15,6 +15,7 @@ const Home: React.FC = () => {
                             name={smoothie.name}
                             price={smoothie.price}
                             url={smoothie.url}
+                            id={smoothie.id}
                         />
                         <div className="link">
                             <Link to={`/product/${smoothie.id}`}><i className="fas fa-plus"></i></Link>

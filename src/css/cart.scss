@@ -53,8 +53,8 @@
 
             .buttons {
                 grid-area: 1 / 6 / 2 / 8;
-                display: flex;
-                align-items: center;
+                display: grid;
+                text-align: center;
                 
                 button {
                     background: none;
@@ -73,7 +73,7 @@
                     background-color: rgb(230, 228, 228);
                     border-radius: 16px;
                     height: 5vh;
-                    width: 20vw;
+                    width: 25vw;
 
                     i {
                         font-size: .5rem;

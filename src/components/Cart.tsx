@@ -10,7 +10,11 @@ const Cart: React.FC = () => {
     let total = 0
     let time = 0
 
-    cart.order.map(product => {
+    cart.order.map((product, index) => {
+        if (product.qty === 0) {
+            cart.order.splice(index, 1)
+        }
+
         total += product.price * product.qty
         time += product.time
     })

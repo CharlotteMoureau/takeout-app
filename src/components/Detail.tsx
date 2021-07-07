@@ -16,8 +16,8 @@ const Detail: React.FC = () => {
 
     const smoothie = smoothiesData.smoothies.find(smoothie => smoothie.id === parseInt(id));
 
-    const orders = cart.order
-    const alreadyOrdered = orders.find(x => x.id === smoothie!.id)
+    const alreadyOrdered = cart.order.find(x => x.id === smoothie!.id)
+
     const [qty, setQty] = useState(alreadyOrdered ? alreadyOrdered.qty : 1)
 
 
@@ -30,7 +30,7 @@ const Detail: React.FC = () => {
     }
 
     const handleOrder = () => {
-        if (qty === 0) {
+        if (!alreadyOrdered && qty === 0) {
             return
         }
 
